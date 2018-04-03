@@ -1,0 +1,12 @@
+.content {
+    &-fullwidth-header {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    &-header {
+    height: 450px;
+    background: url('../img/header.jpg') 0 0/cover no-repeat;
+    padding: 0 30px;
+    border-top: 4px solid #f50;
+    }
+}
