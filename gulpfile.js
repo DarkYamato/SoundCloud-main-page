@@ -26,7 +26,7 @@ const gulp = require('gulp'),
     );
 
     gulp.task('img', () =>
-        gulp.src("src/assets/img/*.+(jpg|jpeg|png|gif)")
+        gulp.src("src/assets/img/*.*")
             .pipe(newer('dist/img/'))
             .pipe(cache(imagemin()))
             .pipe(gulp.dest('dist/img/'))

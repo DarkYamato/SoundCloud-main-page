@@ -1,5 +1,51 @@
 .content {
-    &-search {
-    height: 300px;
+    &-search-trending-search {
+    margin: 49px 0 12px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .headerSearch {
+        position: relative;
+        display: inline-block;
+        width: 600px;
+        margin-right: 14px;
+        input {
+            background: #f2f2f2;
+            color: #666;
+            padding: 0 16px;
+            height: 46px;
+            width: 100%;
+            font-family: "Interstate";
+            font-size: 16px;
+            border-radius: 4px;
+            border: 0;
+        }
+        &-submit {
+            position: absolute;
+            background: transparent url('../img/search.svg') no-repeat 0 0;
+            background-size: 19px 19px;
+            background-position: center center;
+            border: 0;
+            padding: 0;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 46px;
+        }
+    }
+    &-upload {
+        margin-left: 14px;
+        padding: 11px 23px;
+        height: 46px;
+        font-size: 16px;
+    }
+    }
+    &-search-trending-tracks {
+        &-title {
+            font-size: 24px;
+            text-align: center;
+            padding: 20px 0 30px 0;
+        }
     }
 }
