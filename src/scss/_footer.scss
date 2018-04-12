@@ -1,0 +1,53 @@
+.signupModule {
+    text-align: center;
+    height: 375px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    &-title {
+        font-size: 36px;
+    }
+    &-text {
+        font-size: 24px;
+        margin: 7px 0 10px;
+    }
+    &-login {
+        margin: 10px 0;
+        &-button {
+            padding: 11px 23px;
+            min-width: 200px;
+        }
+    }
+    &-signIn {
+        margin: 5px 0 10px;
+        &-button {
+            font-size: 16px;
+            padding: 10px 15px;
+            margin-left: 10px;
+            height: 40px;
+            border: 1px solid #e5e5e5;
+            color: #333;
+            vertical-align: middle;
+        }
+    }
+}
+.footer {
+    padding: 15px 0 40px;
+    line-height: 20px;
+    border-top: 1px solid #f2f2f2;
+    a {
+        font-size: 14px;
+        &:hover {
+            color: #999;
+        }
+    }
+    &-locale {
+        color: #38d;
+        &:hover {
+            color: #333 !important;
+        }
+        .sc-text {
+            color: #333;
+        }
+    }
+}

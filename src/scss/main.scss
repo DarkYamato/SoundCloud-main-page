@@ -95,6 +95,10 @@ button {
     border-color: #ccc;
 }
 
+.sc-verylight {
+    color: #ccc;
+}
+
 @media screen and (max-width: 1239px) {
     .container {
         max-width: 1020px;
@@ -104,3 +108,4 @@ button {
 @import "_header";
 @import "_search";
 @import "_teaser";
+@import "_footer";
