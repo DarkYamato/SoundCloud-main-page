@@ -1,8 +1,7 @@
 .content {
     &-header {
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     height: 454px;
     background: url('../img/header.jpg') 0 0/cover no-repeat;
     color: $primary-color;
@@ -11,7 +10,6 @@
         &-logo {
             display: flex;
             align-items: center;
-            max-width: 216.73px;
             height: 30px;
             .logo-img {
                 background: url('../img/logo-img.png') no-repeat 1px 4px;
@@ -27,8 +25,11 @@
             }
         }
         &-content {
-            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
+            padding: 68px 0 0;
             &-title {
                 margin-bottom: -12px;
                 font-size: 36px;
@@ -40,11 +41,14 @@
                 text-align: center;
             }
             &-button {
-                margin-top: 28px;
+                margin-top: 10px;
             }
         }
         &-signIn {
             height: 30px;
+            position: absolute;
+            top: 20px;
+            right: 30px;
             .button-signIn {
                 margin-right: 6px;
                 height: 30px;
@@ -52,7 +56,7 @@
             }
             .button-account {
                 height: 30px;
-                padding: 0 17px 0 16px;
+                padding: 0 16px;
             }
         }
     }

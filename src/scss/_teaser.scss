@@ -1,16 +1,33 @@
 .mobileTeaser {
     display: flex;
-    justify-content: space-between;
     padding: 0 70px;
     height: 450px;
-    background: #F2F2F2 url('../img/devices.jpg') no-repeat;
-    background-position: 85% 100%;
+    background-color: #F2F2F2;
+    &-devices {
+    position: relative;
+    flex-grow: 1;
+        &-wrapper {
+            width: 100%;
+            padding-top: 54%;
+            .mobileTeaser-device {
+                background: url('../img/devices.jpg') no-repeat;
+                background-position: bottom;
+                background-size: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
     &-info {
         display: flex;
+        justify-content: center;
         flex-flow: column nowrap;
-        padding-top: 94px;
         max-width: 325px;
         width: 100%;
+        margin-right: 45px;
         &-header {
             font-size: 36px;
             &::after {
@@ -63,5 +80,11 @@
             font-size: 18px;
             padding: 11px 24px 12px;
         }
+    }
+}
+
+@media screen and (max-width: 1239px) {
+    .mobileTeaser {
+        height: 350px;
     }
 }

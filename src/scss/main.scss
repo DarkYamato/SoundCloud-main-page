@@ -93,6 +93,9 @@ button {
 .e-button {
     background: 0 0;
     border-color: #ccc;
+    &:hover {
+        border-color: #e5e5e5;
+    }
 }
 
 .sc-verylight {
@@ -102,6 +105,67 @@ button {
 @media screen and (max-width: 1239px) {
     .container {
         max-width: 1020px;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .container {
+        width: 920px;
+        padding: 0 20px;
+    }
+    .fullwidth {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .container {
+        width: 880px;
+        padding: 0 10px;
+    }
+    .fullwidth {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .container {
+        width: 820px;
+        padding: 0 10px;
+    }
+    .fullwidth {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .container {
+        width: 780px;
+        padding: 0 10px;
+    }
+    .fullwidth {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .headerSearch {
+        width: 500px !important;
+    }
+}
+
+@media screen and (max-width: 813px) {
+    .container {
+        width: 745px;
+        padding: 0 10px;
+    }
+    .fullwidth {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .headerSearch {
+        width: 500px !important;
     }
 }
 
