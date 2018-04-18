@@ -11,7 +11,8 @@ const gulp = require('gulp'),
       cache = require('gulp-cache'),
       del = require('del'),
       newer = require('gulp-newer'),
-      notify = require('gulp-notify');
+      notify = require('gulp-notify'),
+      rigger = require('gulp-rigger');
 
     gulp.task('sass', () =>
     	gulp.src('src/scss/main.scss')
@@ -41,12 +42,13 @@ const gulp = require('gulp'),
     gulp.task('assets', () =>
         gulp.src('src/assets/*.html', {since: gulp.lastRun('assets')})
         .pipe(newer('dist'))
+        .pipe(rigger())
         .pipe(gulp.dest('dist'))
     );
 
     gulp.task('watch', () => {
         gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
-        gulp.watch('src/assets/img/*.+(jpg|jpeg|png|gif)', gulp.series('img'));
+        gulp.watch('src/assets/img/*.*', gulp.series('img'));
         gulp.watch('src/fonts/**/*', gulp.series('fonts'));
         gulp.watch('src/assets/**/*.*', gulp.series('assets'));
     });

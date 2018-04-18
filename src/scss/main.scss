@@ -7,25 +7,8 @@ $primary-color: #fff;
     src: url('../fonts/InterstateLight.ttf');
 }
 
-@font-face {
-    font-family: 'LucidaGrande';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/LucidaGrande.ttf');
-}
-
-@font-face {
-    font-family: 'LucidaSans';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/LucidaSans.ttf');
-}
-
-@font-face {
-    font-family: 'LucidaSansUnicode';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/LucidaSansUnicode.ttf');
+.mobile-container {
+    display: none;
 }
 
 html {
@@ -166,6 +149,15 @@ button {
     }
     .headerSearch {
         width: 500px !important;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        display: none;
+    }
+    .mobile-container {
+        display: block;
     }
 }
 

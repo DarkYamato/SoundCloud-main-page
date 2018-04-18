@@ -45,7 +45,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 655px;
+        height: auto;
         &-title {
             font-size: 24px;
             text-align: center;
@@ -56,16 +56,74 @@
             justify-content: space-between;
             flex-wrap: wrap;
             width: 100%;
-            height: 100%;
+            height: auto;
             .list-item {
                 display: flex;
                 flex-direction: column;
-                width: 15.5%;
+                width: 15.1%;
                 height: 48%;
+                padding-bottom: 35px;
                 &-cover {
-                    height: 100%;
+                    position: relative;
+                    height: auto;
                     width: 100%;
-                    border: #e6e2e2 1px solid;
+                    padding-top: 100%;
+                    box-shadow: rgba(0,0,0,.1)0 0 0 1px inset;
+                    &:hover {
+                        .cover-hover {
+                            opacity: 1;
+                        }
+                    }
+                    .cover-hover {
+                        opacity: 0;
+                        &-play {
+                            position: absolute;
+                            left: 34%;
+                            top: 34%;
+                            right: 34%;
+                            bottom: 34%;
+                            &-button {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            background: #f50 url('../img/play.svg') no-repeat 55% 50%;
+                            background-size: 38%;
+                            border: 0;
+                                &:hover {
+                                    background-color: #ff3408;
+                                }
+                            }
+                        }
+                        &-actions {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 40px;
+                            padding: 5px;
+                            background: linear-gradient(to top,rgba(0,0,0,.4),rgba(0,0,0,0));
+                            box-sizing: border-box;
+                            display: flex;
+                            justify-content: flex-end;
+                            .like {
+                                min-width: 25px;
+                                padding-top: 5px;
+                                &-button {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 0;
+                                    background: url('../img/heart.svg') no-repeat 50% 50%;
+                                }
+                            }
+                            .more {
+                                @extend .like;
+                                &-button {
+                                    @extend .like-button;
+                                    background: url('../img/more.svg') no-repeat 50% 50%;
+                                }
+                            }
+                        }
+                    }
                 }
                 .one {
                     background: url('../img/1.jpg') 50% 50%/cover no-repeat;
@@ -127,7 +185,7 @@
         }
         &-explore {
             text-align: center;
-            padding-bottom: 80px;
+            padding: 20px 0 80px;
             a {
                 font-size: 18px;
                 height: 46px;

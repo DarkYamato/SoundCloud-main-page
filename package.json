@@ -18,6 +18,7 @@
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
     "gulp-rename": "latest",
+    "gulp-rigger": "^0.5.8",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest"
   },
